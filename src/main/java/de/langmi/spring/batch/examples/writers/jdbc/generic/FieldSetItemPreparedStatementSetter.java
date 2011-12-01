@@ -33,8 +33,7 @@ public class FieldSetItemPreparedStatementSetter implements ItemPreparedStatemen
     public void setValues(FieldSet item, PreparedStatement ps) throws SQLException {
         for (int i = 0; i < item.getValues().length; i++) {
             // PreparedStatements start with 1
-            ps.setObject(i+1, item.getValues()[i]);
-
+            ps.setObject(i + 1, item.getValues()[i]);
         }
     }
 }
